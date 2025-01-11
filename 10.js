@@ -1,3 +1,7 @@
-const s1 = "ram is a good person";
-const s2 = s1.charAt(0).toUpperCase() + s1.slice(1);
-console.log(s2);
+function capitalizeEachWord(sentence) {
+    return sentence
+        .split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" "); 
+}
+const sentence = "ram is a good person";
+const result = capitalizeEachWord(sentence);
+console.log(result);  
